@@ -5,7 +5,8 @@
   "author": "BdeGr",
   "license": "MIT",
   "scripts": {
-    "start": "yarn outdated && keystone-next build && keystone-next start"
+    "postinstall": "keystone-next build",
+    "start": "keystone-next start"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
@@ -49,9 +50,5 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.0",
     "typescript": "^4.2.4"
-  },
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=7.18.1"
   }
 }
