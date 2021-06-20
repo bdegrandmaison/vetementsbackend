@@ -17,7 +17,7 @@ import { sendPasswordResetEmail } from "./lib/mail";
 import { extendGraphqlSchema } from "./mutations";
 import { permissionsList } from "./schemas/fields";
 
-const databaseURL = process.env.DATABASE_URL || "mongodb://localhost/vetements";
+const databaseURL = process.env.DATABASE_URL;
 
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
@@ -43,6 +43,7 @@ export default withAuth(
   config({
     // @ts-ignore
     server: {
+      port: $PORT,
       cors: {
         origin: [process.env.FRONTEND_URL],
         credentials: true,
