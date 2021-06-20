@@ -5,7 +5,7 @@
   "author": "BdeGr",
   "license": "MIT",
   "scripts": {
-    "start": "keystone-next"
+    "start": "node --max_old_space_size=2560 keystone-next"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
