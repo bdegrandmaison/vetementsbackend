@@ -44,7 +44,7 @@ export default withAuth(
     // @ts-ignore
     server: {
       cors: {
-        origin: [process.env.FRONTEND_URL , process.env.FRONTEND_URL2 ],
+        origin: [process.env.FRONTEND_URL  ],
         credentials: true,
       },
     },
