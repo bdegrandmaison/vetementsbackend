@@ -22,7 +22,7 @@ const databaseURL = process.env.DATABASE_URL;
 const sessionConfig = {
   maxAge: 60 * 60 * 24 * 360, // How long they stay signed in?
   secret: process.env.COOKIE_SECRET,
-  secure: false
+  secure: false,
 };
 
 const { withAuth } = createAuth({
@@ -44,7 +44,7 @@ export default withAuth(
     // @ts-ignore
     server: {
       cors: {
-        origin: [process.env.FRONTEND_URL  ],
+        origin: [process.env.FRONTEND_URL, process.env.FRONTEND_URL2],
         credentials: true,
       },
     },
