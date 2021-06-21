@@ -5,7 +5,7 @@
   "author": "BdeGr",
   "license": "MIT",
   "scripts": {
-    "start": "keystone-next"
+    "start": "keystone-next dev"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",
