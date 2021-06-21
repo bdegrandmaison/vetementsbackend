@@ -5,6 +5,7 @@
   "author": "BdeGr",
   "license": "MIT",
   "scripts": {
+    "postinstall": "npm install --legacy-peer-deps",
     "start": "keystone-next dev"
   },
   "eslintConfig": {
@@ -51,6 +52,7 @@
     "typescript": "^4.2.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=7.18.1"
   }
 }
